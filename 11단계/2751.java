@@ -21,7 +21,7 @@ public class Main {
     Collections.sort(ary); // sorting
 
     for (int i = 0; i < n; i++) { // ary돌면서 x 출력
-      buffWriter.write(ary.get(i) + "\n");
+      buffWriter.write(ary.get(i) + "\n");  //bufferwirter는 개행x -> 따로 \
     }
 
     // Flush the buffer writer
