@@ -8,7 +8,7 @@ public class Main {
    static int ary[];
   
   public static void main(String[] args) throws IOException {
-    FastReader fr = new FastReader(); // 문제 해결 소스 코드
+    FastReader fr = new FastReader(); 
 
     int n = fr.nextInt(); 
     ary = new int[n]; //DP위해서 망들어두기
