@@ -27,7 +27,7 @@ public class Main {
 
     while(zero < K) {  //내구도가 0인 칸이 K개 미만일때
       step++;
-      int robot_cnt = q.size(); // size별로 수행  
+      int robot_cnt = q.size(); //size별로 수행  
       
       //1. 벨트 한칸 회전
 			int pre = A[2*N-1]; // 가장 끝 
