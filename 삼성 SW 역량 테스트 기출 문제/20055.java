@@ -3,7 +3,7 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    FastReader fr = new FastReader(); // 문제 해결 소스 코드
+    FastReader fr = new FastReader(); 
     
     int N = fr.nextInt();  //컨베이어 길이(총 길이는 2N)
     int K = fr.nextInt();  //종료조건: 내구도가 0인 칸이 k개 이상
