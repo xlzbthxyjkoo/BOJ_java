@@ -6,7 +6,7 @@ public class Main {
   // 노드의 개수(N:도시의 개수), 간선의 개수(M:버스의 개수)
   public static int n, m;
 
-  // 2차원 배열(그래프 표현)를 만들기
+  // 2차원 배열을 만들기
   public static int[][] graph = new int[101][101];
 
   public static void main(String[] args) {
