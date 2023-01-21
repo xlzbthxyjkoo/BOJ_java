@@ -51,7 +51,7 @@ public class Main {
       // 위에서 큐의 길이에 변동이 생겼을 수도 있다
 			robot_cnt = q.size();
 			
-      //2. 이동 시킬 로봇이 있다면 이동. 내려가는 위치에 도착하면 Queue에서 뺀다.
+      //2. 이동 시킬 로봇이 있다면 이동. 내려가는 위치에 도착하면 Queue에서 뺀다
 			if(robot_cnt != 0) {
 				cnt = 0;
 				while(robot_cnt > cnt) {
