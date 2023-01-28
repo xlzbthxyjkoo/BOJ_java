@@ -11,7 +11,7 @@ public class Main {
     FastReader fr = new FastReader(); 
 
     int n = fr.nextInt(); 
-    ary = new int[n]; //DP위해서 망들어두기
+    ary = new int[n]; //DP위해서 만들어두기
 
     fib(n);
     fibonacci(n);
