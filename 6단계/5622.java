@@ -1,4 +1,4 @@
-/*0은 어케 하는거지...? */
+/*0은 어케 하는거지? */
 
 import java.util.*;
 import java.io.*;
