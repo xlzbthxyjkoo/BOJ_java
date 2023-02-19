@@ -3,7 +3,7 @@ import java.io.*;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    FastReader fr = new FastReader(); // 문제 해결 소스 코드
+    FastReader fr = new FastReader(); //문제 해결 소스 코드
     int N = fr.nextInt();
     
     int k = fr.nextInt();
