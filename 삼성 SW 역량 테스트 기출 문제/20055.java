@@ -5,7 +5,7 @@ public class Main {
   public static void main(String[] args) throws IOException {
     FastReader fr = new FastReader(); 
     
-    int N = fr.nextInt();  // 컨베이어 길이(총 길이는 2N)
+    int N = fr.nextInt();  //컨베이어 길이(총 길이는 2N)
     int K = fr.nextInt();  //종료조건:내구도가 0인 칸이 k개 이상
     int[] A = new int[2*N]; //컨베이어 벨트의 길이 만큼 내구도
 
