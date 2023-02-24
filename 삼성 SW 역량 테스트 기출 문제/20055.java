@@ -25,7 +25,7 @@ public class Main {
     Queue<Integer> q = new LinkedList<>(); //로봇 이동을 위한 큐
     boolean[] robot = new boolean[2*N]; // 현재 위치에 로봇이 있는지 판단
 
-    while(zero < K) {  //내구도가 0인 칸이 K개 미만일때
+    while(zero < K) {  // 내구도가 0인 칸이 K개 미만일때
       step++;
       int robot_cnt = q.size(); //size별로 수행  
       
