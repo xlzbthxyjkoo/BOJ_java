@@ -4,7 +4,7 @@ import java.io.*;
 public class Main {
     public static void main(String[] args) throws IOException {
         FastReader fr = new FastReader(); // 문제 해결 소스 코드
-        int N = fr.nextInt(); //주어진 방의 개수
+        int N = fr.nextInt(); // 주어진 방의 개수
         
         int num = 1; //1부터 진행 
         int count = 1;
