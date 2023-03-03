@@ -8,7 +8,7 @@ public class Main {
   public static void main(String[] args) throws IOException {
     FastReader fr = new FastReader();
 
-    String str = fr.next(); //문자열 입력받기
+    String str = fr.next(); // 문자열 입력받기
     int count = 0; //소요 시간 측정
 
     for(int i = 0; i < str.length(); i++) {
