@@ -8,7 +8,7 @@ public class Main {
         
       int N = fr.nextInt();  //입력 받을 숫자 개수
 
-      int ary[] = new int[N];  //숫자 입력 받을 배열
+      int ary[] = new int[N];  // 숫자 입력 받을 배열
       
       for(int i = 0; i < N; i++) {
         ary[i] = fr.nextInt();  //배열에 숫자 저장
