@@ -30,13 +30,13 @@ public class Main {
       int robot_cnt = q.size(); //size별로 수행  
       
       //1. 벨트 한칸 회전
-			int pre = A[2*N-1]; // 가장 끝 
+			int pre = A[2*N-1]; //가장 끝 
 			for(int i = 0; i < 2*N; i++) { // 한칸씩 앞으로 이동하며 갱신
 				int cur = A[i];
 				A[i] = pre;
 				pre = cur;
 			}
-      // 로봇위치도 이동, 여기서 내려가는 위치라면 Queue에서 빼준다.
+      //로봇위치도 이동, 여기서 내려가는 위치라면 Queue에서 빼준다.
 			int cnt = 0;
 			
       while(robot_cnt > cnt) {
