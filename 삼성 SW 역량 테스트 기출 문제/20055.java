@@ -44,7 +44,7 @@ public class Main {
 				int pos = q.poll();
 				robot[pos] = false;
 				int next_pos = (pos+1)%(2*N);
-				if(next_pos == N) continue; // 내려가는 위치라면 큐에 넣지않는다.
+				if(next_pos == N) continue; //내려가는 위치라면 큐에 넣지않는다.
 				q.offer(next_pos);
 				robot[next_pos] = true;
 			}
