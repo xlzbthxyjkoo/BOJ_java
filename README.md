@@ -1,4 +1,4 @@
-## BOJ problems solving w java
+## BOJ problems solving w/ java
 
 #### BOJ: [link][bojlink]
 [bojlink]: https://www.acmicpc.net/
