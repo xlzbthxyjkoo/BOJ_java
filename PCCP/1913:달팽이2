@@ -1,0 +1,57 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class Main {
+    final static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    static int N; //배열 크기
+    static int number; //찾고싶은 위치
+    static int[][] arr;
+
+    static int [] dx = {1, 0, -1, 0}; //하, 우, 상, 좌
+    static int [] dy = {0, 1, 0, -1};
+    static int x = -1, y = 0, d = 0;
+    static int numberX = 0, numberY = 0; //출력해야하는 숫자의 좌표
+    
+    static StringBuilder sb = new StringBuilder();
+
+    //출력
+    static void print(int[][] graph) {
+        for(int a = 0; a < graph.length; a++) {
+            for(int b = 0; b < graph.length; b++) {
+                if(number == arr[a][b]) {
+                    numberX = a + 1;
+                    numberY = b + 1;
+                }
+                sb.append(arr[a][b] + " ");
+            }
+            //한 행 다 출력하면 줄바꿈
+            sb.append("\n");
+        }
+        //좌표 출력
+        sb.append(numberX + " " + numberY);
+        System.out.println(sb.toString());
+    }
+
+    public static void main(String[] args) throws IOException {
+        N = Integer.parseInt(br.readLine());
+        number = Integer.parseInt(br.readLine());
+        arr = new int[N][N];
+        int num = N*N;
+
+        //if문으로 예외를 제한하지 않고 그냥 딱 그 방향으로 몇 칸 갈 지 지정해주는 방법
+        // N=3인 경우라면 하우상좌  방향으로 3,2,2,1,1 움직여야 함
+        //N*2를 한 뒤 2로 나눈 몫을 가지고 for 문 돌리면서 배열에 값 넣어준다
+        for(int i = N*2; i > 1; i--) {
+            for(int j = 0; j <i/2; j++) {
+                x += dx[d % 4];
+                y += dy[d % 4];
+                arr[x][y] = num;
+                num--;
+            }
+            d++;
+        }
+        print(arr);
+    }
+}
